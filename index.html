@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <meta charset="UTF-8" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+    <script src="js/treeAnimation.js"></script>
+    <link rel="stylesheet" href="css/tree.css">
+
+    <title>Jquery Project</title>
+</head>
+
+<body>
+    <!-- Create two buttons:
+   "Add ornament": drop a ornament ball and place it in the tree
+   "Move the tree": animation is made that makes the balls fall and is counted as a deleted ball 
+   You must keep track of both the balls on the tree and the balls that fall to the ground  -->
+
+    <h1 id="title">Merry JQuery Christmas</h1>
+    <div class="container">
+        <!-- Some snowing effect just for fun-->
+        <div class="snowflakes" aria-hidden="true">
+            <div class="snowflake">
+                ❅
+            </div>
+            <div class="snowflake">
+                ❆
+            </div>
+            <div class="snowflake">
+                ❅
+            </div>
+            <div class="snowflake">
+                ❆
+            </div>
+            <div class="snowflake">
+                ❅
+            </div>
+            <div class="snowflake">
+                ❆
+            </div>
+            <div class="snowflake">
+                ❅
+            </div>
+            <div class="snowflake">
+                ❆
+            </div>
+            <div class="snowflake">
+                ❅
+            </div>
+            <div class="snowflake">
+                ❆
+            </div>
+            <div class="snowflake">
+                ❅
+            </div>
+            <div class="snowflake">
+                ❆
+            </div>
+        </div>
+        <!-- Buttons Add & Clear decoration call onclick functions-->
+        <button id="add" onclick="appear()">Add Decoration</button>
+        <button id="clear" onclick="disappear()">Moving the Tree</button>
+        <div class="containers"></div>
+        <div id="ballAdded">Balls added:</div>
+        <div id="ballRemoved">Balls removed: </div>
+    </div>
+    <!-- Christimas tree image and the ornaments -->
+    <section>
+        <div class="image">
+            <div id="ornaments">
+                <div class="ornament" id="ornament1"></div>
+            </div>
+            <img src="img/tree.png" alt="Christmas Tree" id="tree">
+        </div>
+    </section>
+    </div>
+</body>
+
+</html>
